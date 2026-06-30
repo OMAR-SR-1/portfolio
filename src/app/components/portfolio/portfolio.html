@@ -1,0 +1,39 @@
+<section class="portfolio section" id="portfolio">
+  <div class="container">
+    <p class="eyebrow fade-in">Mon travail</p>
+    <h2 class="section-title fade-in">Mes projets <span class="hl">.</span></h2>
+    <div class="tabs">
+      <button class="tab" [class.active]="activeTab === 'projects'" (click)="setTab('projects')">Projets</button>
+      <button class="tab" [class.active]="activeTab === 'certificates'" (click)="setTab('certificates')">Certificats</button>
+      <button class="tab" [class.active]="activeTab === 'stack'" (click)="setTab('stack')">Stack technique</button>
+    </div>
+
+    <div class="tab-content" *ngIf="activeTab === 'projects'">
+      <div class="projects-grid">
+        <div class="project-card" *ngFor="let p of projects">
+          <h3>{{ p.title }}</h3>
+          <p>{{ p.desc }}</p>
+          <div class="tags">
+            <span class="tag" *ngFor="let t of p.tags">{{ t }}</span>
+          </div>
+          <a [href]="p.link" class="project-link" target="_blank">Voir le projet →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" *ngIf="activeTab === 'certificates'">
+      <div class="cert-list">
+        <div class="cert-card" *ngFor="let c of certificates">
+          <h3>{{ c.title }}</h3>
+          <p>{{ c.org }} — {{ c.year }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" *ngIf="activeTab === 'stack'">
+      <div class="stack-grid">
+        <span class="stack-item" *ngFor="let s of stack">{{ s }}</span>
+      </div>
+    </div>
+  </div>
+</section>

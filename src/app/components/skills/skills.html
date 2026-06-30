@@ -1,0 +1,22 @@
+<section class="skills section" id="competences">
+  <div class="container">
+    <p class="eyebrow fade-in">Ce que je sais faire</p>
+    <h2 class="section-title fade-in">Compétences <span class="hl">.</span></h2>
+
+    <div class="skills__grid">
+      <div class="skill-item fade-in" *ngFor="let skill of skills">
+        <div class="skill-item__header">
+          <span class="skill-item__name">{{ skill.name }}</span>
+          <span class="skill-item__level">{{ skill.level }}%</span>
+        </div>
+        <div class="skill-item__bar">
+          <div
+            class="skill-item__fill"
+            [style.width.%]="skill.level"
+            [style.background]="skill.color">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

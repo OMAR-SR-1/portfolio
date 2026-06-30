@@ -1,0 +1,53 @@
+<section class="contact section" id="contact">
+  <div class="container">
+    <p class="eyebrow fade-in">Me contacter</p>
+    <h2 class="section-title fade-in">Discutons <span class="hl">.</span></h2>
+    <div class="contact__grid">
+      <div class="contact__info">
+        <p>Une opportunité de stage, une question technique ou simplement envie d'échanger sur le dev ? Ma boîte mail est grande ouverte.</p>
+
+        <div class="contact__links">
+          <a href="mailto:omar.sarr@example.com" class="contact__item">
+            <span></span> sarromar1106@gmail.com
+          </a>
+          <a href="https://github.com/OMAR-SR-1" target="_blank" class="contact__item">
+            <span></span> GitHub
+          </a>
+          <a href="https://linkedin.com/" target="_blank" class="contact__item">
+            <span>🔗</span> LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <form class="contact__form" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+        <input
+          type="text"
+          name="name"
+          placeholder="Ton nom"
+          [(ngModel)]="name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Ton email"
+          [(ngModel)]="email"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Ton message"
+          rows="5"
+          [(ngModel)]="message"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">
+          Envoyer le message
+        </button>
+
+        <p class="contact__success" *ngIf="sent">✅ Message envoyé (simulation) !</p>
+      </form>
+    </div>
+  </div>
+</section>

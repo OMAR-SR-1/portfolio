@@ -1,0 +1,46 @@
+.about {
+  padding-top: 0;
+}
+
+.about__bio {
+  color: var(--text-muted);
+  max-width: 640px;
+  margin: 20px 0 48px;
+  font-size: 1.05rem;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.about__card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+  }
+}
+
+.about__icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.about__card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.about__card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}

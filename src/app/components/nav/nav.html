@@ -1,0 +1,25 @@
+<header class="nav">
+  <div class="container nav__inner">
+    <a href="#accueil" class="nav__logo">Portfolio<span class="hl">.</span></a>
+
+    <nav class="nav__links" [class.open]="menuOpen">
+  <a href="#accueil" (click)="closeMenu()">Accueil</a>
+  <a href="#apropos" (click)="closeMenu()">À propos</a>
+  <a href="#competences" (click)="closeMenu()">Compétences</a>
+  <a href="#portfolio" (click)="closeMenu()">Portfolio</a>
+  <a href="#contact" (click)="closeMenu()">Contact</a>
+</nav>
+    <div class="nav__actions">
+      <button class="theme-toggle" (click)="toggleTheme()" [attr.aria-label]="'Changer le thème'">
+        <span *ngIf="isDark">T</span>
+        <span *ngIf="!isDark">T</span>
+      </button>
+
+      <button class="burger" (click)="toggleMenu()" [class.active]="menuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
