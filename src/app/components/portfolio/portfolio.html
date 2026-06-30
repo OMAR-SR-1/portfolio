@@ -4,7 +4,6 @@
     <h2 class="section-title fade-in">Mes projets <span class="hl">.</span></h2>
     <div class="tabs">
       <button class="tab" [class.active]="activeTab === 'projects'" (click)="setTab('projects')">Projets</button>
-      <button class="tab" [class.active]="activeTab === 'certificates'" (click)="setTab('certificates')">Certificats</button>
       <button class="tab" [class.active]="activeTab === 'stack'" (click)="setTab('stack')">Stack technique</button>
     </div>
 
@@ -21,15 +20,7 @@
       </div>
     </div>
 
-    <div class="tab-content" *ngIf="activeTab === 'certificates'">
-      <div class="cert-list">
-        <div class="cert-card" *ngFor="let c of certificates">
-          <h3>{{ c.title }}</h3>
-          <p>{{ c.org }} — {{ c.year }}</p>
-        </div>
-      </div>
-    </div>
-
+    
     <div class="tab-content" *ngIf="activeTab === 'stack'">
       <div class="stack-grid">
         <span class="stack-item" *ngFor="let s of stack">{{ s }}</span>

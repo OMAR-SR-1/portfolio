@@ -55,10 +55,5 @@ export class Portfolio {
     }
   ];
 
-  certificates: Certificate[] = [
-    { title: 'Introduction au développement web', org: 'OpenClassrooms', year: '2025' },
-    { title: 'Bases de données relationnelles', org: 'Coursera', year: '2025' }
-  ];
-
   stack: string[] = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Angular', 'PHP', 'MySQL', 'MongoDB', 'Canva', 'Git'];
 }
