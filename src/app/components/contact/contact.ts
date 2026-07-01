@@ -14,14 +14,37 @@ export class Contact {
   email = '';
   message = '';
   sent = false;
+  sending = false;
+  error = false;
 
-  onSubmit() {
-    console.log({ name: this.name, email: this.email, message: this.message });
-    this.sent = true;
-    this.name = '';
-    this.email = '';
-    this.message = '';
+  async onSubmit() {
+    this.sending = true;
+    this.error = false;
 
-    setTimeout(() => this.sent = false, 4000);
+    try {
+      const response = await fetch('https://formspree.io/f/xwvdrkkr', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: this.name,
+          email: this.email,
+          message: this.message
+        })
+      });
+
+      if (response.ok) {
+        this.sent = true;
+        this.name = '';
+        this.email = '';
+        this.message = '';
+        setTimeout(() => this.sent = false, 5000);
+      } else {
+        this.error = true;
+      }
+    } catch {
+      this.error = true;
+    } finally {
+      this.sending = false;
+    }
   }
 }

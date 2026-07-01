@@ -42,11 +42,12 @@
           required
         ></textarea>
 
-        <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">
-          Envoyer le message
-        </button>
+       <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid || sending">
+  {{ sending ? 'Envoi en cours...' : 'Envoyer le message' }}
+</button>
 
-        <p class="contact__success" *ngIf="sent">✅ Message envoyé (simulation) !</p>
+<p class="contact__success" *ngIf="sent">Message envoyé ! Je te réponds bientôt.</p>
+<p class="contact__error" *ngIf="error">Erreur, réessaie plus tard.</p>
       </form>
     </div>
   </div>
