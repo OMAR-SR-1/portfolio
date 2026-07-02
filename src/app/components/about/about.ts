@@ -22,7 +22,7 @@ export class About implements OnInit {
     setTimeout(() => this.scroll.observe(), 100);
   }
 
-  bio = `Étudiant en L2 Informatique, je m'intéresse au développement web, à la conception d'interfaces et à la résolution de problèmes techniques. Curieux et rigoureux, j'aime apprendre de nouveaux outils et les mettre en pratique sur des projets concrets.`;
+  bio = `Etudiant en L2 Informatique, je m'intéresse au développement web, à la conception d'interfaces et à la résolution de problèmes techniques. Curieux et rigoureux, j'aime apprendre de nouveaux outils et les mettre en pratique sur des projets concrets.`;
 
   cards: SkillCard[] = [
     { icon: '', title: 'Développement', desc: 'HTML, CSS, JavaScript, Python,Angular, PHP' },
