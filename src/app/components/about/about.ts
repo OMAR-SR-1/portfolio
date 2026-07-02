@@ -25,8 +25,8 @@ export class About implements OnInit {
   bio = `Étudiant en L2 Informatique, je m'intéresse au développement web, à la conception d'interfaces et à la résolution de problèmes techniques. Curieux et rigoureux, j'aime apprendre de nouveaux outils et les mettre en pratique sur des projets concrets.`;
 
   cards: SkillCard[] = [
-    { icon: '', title: 'Développement', desc: 'HTML, CSS, JavaScript, Angular, PHP' },
-    { icon: '', title: 'Design', desc: 'Canva, maquettes UI simples' },
+    { icon: '', title: 'Développement', desc: 'HTML, CSS, JavaScript, Python,Angular, PHP' },
+    { icon: '', title: 'Design', desc: 'Canva,WordPress ' },
     { icon: '', title: 'Bases de données', desc: 'MySQL, MongoDB' },
     { icon: '', title: 'Soft skills', desc: 'Travail d\'équipe, autonomie, rigueur' }
   ];
