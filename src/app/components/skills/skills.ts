@@ -28,6 +28,7 @@ export class Skills implements OnInit {
     { name: 'TypeScript', level: 48, color: 'var(--accent)' },
     { name: 'Angular', level: 50, color: 'var(--accent-2)' },
     { name: 'PHP', level: 40, color: 'var(--accent)' },
+    { name: 'Python', level: 56, color: 'var(--accent)' },
     { name: 'MySQL', level: 80, color: 'var(--accent-2)' },
     { name: 'MongoDB', level: 19, color: 'var(--accent)' },
     { name: 'Git', level: 60, color: 'var(--accent-2)' }
