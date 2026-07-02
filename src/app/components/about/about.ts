@@ -26,8 +26,8 @@ export class About implements OnInit {
 
   cards: SkillCard[] = [
     { icon: '', title: 'Développement', desc: 'HTML, CSS, JavaScript, Python,Angular, PHP' },
-    { icon: '', title: 'Design', desc: 'Canva,WordPress ' },
     { icon: '', title: 'Bases de données', desc: 'MySQL, MongoDB' },
+    { icon: '', title: 'Design', desc: 'Canva,WordPress ' },
     { icon: '', title: 'Soft skills', desc: 'Travail d\'équipe, autonomie, rigueur' }
   ];
 }
