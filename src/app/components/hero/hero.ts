@@ -10,6 +10,6 @@ import { CommonModule } from '@angular/common';
 })
 export class HeroComponent {
   name = 'Omar Sarr';
-  title = 'Étudiant en Informatique de gestion';
+  title = 'Etudiant en Informatique de gestion';
   description = 'Développeur en devenir, j\'aime traduire des idées concrètes en lignes de code et concevoir des applications web fluides, structurées et performantes.';
 }
