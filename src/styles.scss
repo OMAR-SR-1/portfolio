@@ -6,8 +6,8 @@
   --border: #30363d;
   --text: #e6edf3;
   --text-muted: #8b949e;
-  --accent: #2f81f7;
-  --accent-2: #2ea043;
+  --accent: #58a6ff;
+  --accent-2: #79c0ff;
   --font-display: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --radius: 8px;
@@ -21,8 +21,8 @@ html[data-theme="light"] {
   --border: #d0d7de;
   --text: #24292f;
   --text-muted: #57606a;
-  --accent: #0969da;
-  --accent-2: #1a7f37;
+  --accent: #245ca6;
+  --accent-2: #0969da;
   color-scheme: light;
 }
 
@@ -115,7 +115,7 @@ a {
 }
 
 .btn-primary:hover {
-  background: #1f6feb;
+  background: #388bfd;
 }
 
 .fade-in {
